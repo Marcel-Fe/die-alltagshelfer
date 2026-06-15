@@ -1,6 +1,11 @@
 # Verifikations-Artefakte
 _verify.js
 _shot_*.png
+_shot.js
+
+# Logo-Auswahl (Arbeitsdateien + PDF)
+_logo-pdf/
+Logo-Konzepte-Die-Alltagshelfer.pdf
 
 # System / Editor
 .DS_Store

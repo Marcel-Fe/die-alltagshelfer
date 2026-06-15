@@ -3,24 +3,26 @@
    ============================================================ */
 
 :root {
-  --paper: #FAF7F1;
-  --paper-2: #F2EDE4;
-  --card: #FFFFFF;
-  --ink: #12302B;
-  --ink-soft: #4A6660;
-  --ink-faint: #7E938E;
-  --teal: #0F6A5E;
-  --teal-bright: #169B87;
+  /* Dunkles Theme: Sidebar am dunkelsten -> Hintergrund -> Karten heller */
+  --sidebar: #071C18;
+  --paper: #0B2420;       /* Haupt-Hintergrund */
+  --paper-2: #14302A;     /* sekundäre Flächen / Hover */
+  --card: #112E28;        /* Karten */
+  --ink: #EAF1EE;         /* Haupttext hell */
+  --ink-soft: rgba(234,241,238,0.66);
+  --ink-faint: rgba(234,241,238,0.42);
+  --teal: #169B87;
+  --teal-bright: #2DBFA6;
   --teal-deep: #0B4A41;
   --dark: #0A2622;
   --dark-2: #0E332D;
   --amber: #EFA73E;
-  --coral: #E8743F;
-  --line: rgba(18, 48, 43, 0.12);
+  --coral: #F08A5E;
+  --line: rgba(255, 255, 255, 0.09);
   --font-display: "Bricolage Grotesque", Georgia, serif;
   --font-body: "Instrument Sans", "Segoe UI", sans-serif;
   --radius: 16px;
-  --shadow-sm: 0 1px 2px rgba(18,48,43,0.06), 0 4px 12px rgba(18,48,43,0.05);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.25), 0 8px 22px rgba(0,0,0,0.18);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -46,8 +48,9 @@ button { font-family: inherit; cursor: pointer; }
 
 /* ---------- Sidebar ---------- */
 .sidebar {
-  background: var(--dark);
+  background: var(--sidebar);
   color: #F2F0EA;
+  border-right: 1px solid rgba(255,255,255,0.06);
   display: flex;
   flex-direction: column;
   padding: 22px 16px;
@@ -150,9 +153,9 @@ button { font-family: inherit; cursor: pointer; }
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #C2552A;
-  background: rgba(232, 116, 63, 0.12);
-  border: 1px solid rgba(232, 116, 63, 0.30);
+  color: #F2926B;
+  background: rgba(232, 116, 63, 0.14);
+  border: 1px solid rgba(232, 116, 63, 0.35);
   padding: 6px 13px;
   border-radius: 999px;
 }
@@ -170,7 +173,7 @@ button { font-family: inherit; cursor: pointer; }
   width: 8px; height: 8px;
   border-radius: 50%;
   background: var(--coral);
-  border: 2px solid #fff;
+  border: 2px solid var(--card);
 }
 
 /* ---------- Views ---------- */
@@ -216,10 +219,12 @@ button { font-family: inherit; cursor: pointer; }
   padding: 22px 22px 20px;
   box-shadow: var(--shadow-sm);
 }
+/* dezenter Akzent für die hervorgehobene Karte (statt eigener Farbfläche) */
 .stat-card.dark {
-  background: radial-gradient(280px 160px at 110% -20%, rgba(22,155,135,0.4), transparent 60%), var(--dark);
-  border-color: var(--dark);
-  color: #F2F0EA;
+  background:
+    radial-gradient(320px 180px at 110% -30%, rgba(45,191,166,0.12), transparent 60%),
+    var(--card);
+  border-color: rgba(45,191,166,0.28);
 }
 .stat-label {
   font-size: 12.5px;
@@ -229,19 +234,17 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--ink-faint);
   margin-bottom: 10px;
 }
-.stat-card.dark .stat-label { color: rgba(242,240,234,0.55); }
 .stat-value {
   font-family: var(--font-display);
   font-size: 30px;
   font-weight: 800;
-  color: var(--teal-deep);
+  color: var(--ink);
   line-height: 1.05;
 }
-.stat-card.dark .stat-value { color: var(--amber); }
-.stat-value.warn { color: #C2552A; }
+.stat-card.dark .stat-value { color: var(--teal-bright); }
+.stat-value.warn { color: var(--coral); }
 .stat-trend { font-size: 13px; color: var(--ink-faint); margin-top: 8px; }
-.stat-trend.up { color: var(--teal); font-weight: 600; }
-.stat-card.dark .stat-trend.up { color: var(--teal-bright); }
+.stat-trend.up { color: var(--teal-bright); font-weight: 600; }
 
 /* ---------- Panels ---------- */
 .panel-grid {
@@ -346,7 +349,7 @@ button { font-family: inherit; cursor: pointer; }
 .a-dot.teal { background: var(--teal-bright); }
 .a-dot.amber { background: var(--amber); }
 .a-dot.coral { background: var(--coral); }
-.a-dot.deep { background: var(--teal-deep); }
+.a-dot.deep { background: rgba(234,241,238,0.45); }
 .activity strong { display: block; font-size: 14.5px; font-weight: 600; }
 .activity small { color: var(--ink-faint); font-size: 12.5px; }
 
@@ -380,10 +383,10 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: 999px;
   white-space: nowrap;
 }
-.tag-teal { background: rgba(15,106,94,0.10); color: var(--teal); }
-.tag-amber { background: rgba(239,167,62,0.16); color: #B0741A; }
-.tag-coral { background: rgba(232,116,63,0.13); color: #C2552A; }
-.tag-deep { background: rgba(10,38,34,0.08); color: var(--dark-2); }
+.tag-teal { background: rgba(45,191,166,0.16); color: #58D2BC; }
+.tag-amber { background: rgba(239,167,62,0.18); color: #F4C078; }
+.tag-coral { background: rgba(232,116,63,0.18); color: #F2926B; }
+.tag-deep { background: rgba(255,255,255,0.08); color: rgba(234,241,238,0.72); }
 
 /* ---------- Chat ---------- */
 .chat-panel { max-width: 760px; }
@@ -425,6 +428,7 @@ button { font-family: inherit; cursor: pointer; }
   flex: 1;
   font-family: var(--font-body);
   font-size: 14.5px;
+  color: var(--ink);
   padding: 12px 16px;
   border: 1.5px solid var(--line);
   border-radius: 999px;
@@ -432,9 +436,10 @@ button { font-family: inherit; cursor: pointer; }
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
+.chat-input input::placeholder { color: var(--ink-faint); }
 .chat-input input:focus {
-  border-color: var(--teal);
-  box-shadow: 0 0 0 4px rgba(15,106,94,0.10);
+  border-color: var(--teal-bright);
+  box-shadow: 0 0 0 4px rgba(45,191,166,0.14);
 }
 
 /* ---------- Automatisierungen ---------- */
