@@ -128,13 +128,14 @@ button { font-family: inherit; cursor: pointer; }
 .sb-back:hover { color: var(--amber); }
 
 /* ---------- Main / Topbar ---------- */
-.main { padding: 30px 36px 48px; min-width: 0; }
+.main { padding: 40px 48px 64px; min-width: 0; }
+.main > * { max-width: 1080px; margin-inline: auto; }
 .topbar {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 .topbar h1 {
   font-family: var(--font-display);
@@ -205,14 +206,14 @@ button { font-family: inherit; cursor: pointer; }
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  margin-bottom: 24px;
+  gap: 20px;
+  margin-bottom: 28px;
 }
 .stat-card {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 22px;
+  padding: 22px 22px 20px;
   box-shadow: var(--shadow-sm);
 }
 .stat-card.dark {
@@ -231,7 +232,7 @@ button { font-family: inherit; cursor: pointer; }
 .stat-card.dark .stat-label { color: rgba(242,240,234,0.55); }
 .stat-value {
   font-family: var(--font-display);
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 800;
   color: var(--teal-deep);
   line-height: 1.05;
@@ -246,13 +247,13 @@ button { font-family: inherit; cursor: pointer; }
 .panel-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  gap: 18px;
+  gap: 20px;
 }
 .panel {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 24px;
+  padding: 26px 28px;
   box-shadow: var(--shadow-sm);
 }
 .panel-head {
@@ -281,8 +282,8 @@ button { font-family: inherit; cursor: pointer; }
 .chart {
   display: flex;
   align-items: flex-end;
-  gap: 12px;
-  height: 190px;
+  gap: 14px;
+  height: 158px;
   padding-top: 10px;
 }
 .chart-bar {
