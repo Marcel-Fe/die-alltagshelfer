@@ -12,3 +12,7 @@ Logo-Konzepte-Die-Alltagshelfer.pdf
 Thumbs.db
 node_modules/
 .vscode/
+
+# Dashboard-Screenshots (Verifikation)
+_d_*.png
+_teaser.png
