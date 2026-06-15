@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" fill="none">
+  <defs>
+    <linearGradient id="ai-bg" x1="0" y1="0" x2="192" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10342F"/>
+      <stop offset="1" stop-color="#071F1B"/>
+    </linearGradient>
+    <linearGradient id="ai-platform" x1="60" y1="50" x2="140" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2EA08D"/>
+      <stop offset="1" stop-color="#147263"/>
+    </linearGradient>
+    <linearGradient id="ai-amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6BE5F"/>
+      <stop offset="1" stop-color="#E89B2F"/>
+    </linearGradient>
+    <linearGradient id="ai-teal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34B39E"/>
+      <stop offset="1" stop-color="#147263"/>
+    </linearGradient>
+    <linearGradient id="ai-coral" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F58E72"/>
+      <stop offset="1" stop-color="#E0633F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="192" height="192" rx="44" fill="url(#ai-bg)"/>
+  <circle cx="40" cy="30" r="60" fill="#2EA08D" opacity="0.10"/>
+
+  <g transform="translate(48 38) scale(1.05)">
+    <ellipse cx="48" cy="92" rx="32" ry="5" fill="#000" opacity="0.25"/>
+    <g transform="rotate(-7 48 27)">
+      <rect x="14" y="22" width="68" height="15" rx="7.5" fill="#0B4A41"/>
+      <rect x="14" y="20" width="68" height="13" rx="6.5" fill="url(#ai-platform)"/>
+      <circle cx="27" cy="26.5" r="3.2" fill="#F6BE5F"/>
+      <rect x="35" y="24" width="22" height="5" rx="2.5" fill="#FFFFFF" opacity="0.55"/>
+      <circle cx="66" cy="26.5" r="2.4" fill="#FFFFFF" opacity="0.85"/>
+    </g>
+    <path d="M76 8l1.9 4.6 4.6 1.9-4.6 1.9L76 21l-1.9-4.6-4.6-1.9 4.6-1.9L76 8z" fill="#E8743F"/>
+    <g>
+      <circle cx="25" cy="53" r="7" fill="url(#ai-amber)"/>
+      <path d="M14 90V72c0-6.6 4.9-11 11-11s11 4.4 11 11v18H14z" fill="url(#ai-amber)"/>
+      <path d="M19 62l-3-17" stroke="#E89B2F" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="71" cy="53" r="7" fill="url(#ai-coral)"/>
+      <path d="M60 90V72c0-6.6 4.9-11 11-11s11 4.4 11 11v18H60z" fill="url(#ai-coral)"/>
+      <path d="M77 62l3.5-16.5" stroke="#E0633F" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="48" cy="49" r="8" fill="url(#ai-teal)"/>
+      <path d="M36 90V70c0-7.2 5.4-12 12-12s12 4.8 12 12v20H36z" fill="url(#ai-teal)"/>
+      <path d="M41 59l-2-18" stroke="#0E5C51" stroke-width="5.5" stroke-linecap="round"/>
+      <path d="M55 59l2-18" stroke="#0E5C51" stroke-width="5.5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+# Verifikations-Artefakte
+_verify.js
+_shot_*.png
+
+# System / Editor
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
