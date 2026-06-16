@@ -28,3 +28,8 @@ _apps_block.html
 _capture.js
 _recap.js
 _appsheet.*
+
+_v_*.png
+_g*.png
+_gcap*.js
+_gsheet.*
