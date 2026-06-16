@@ -16,3 +16,8 @@ node_modules/
 # Dashboard-Screenshots (Verifikation)
 _d_*.png
 _teaser.png
+
+# Bild-Auswahl (Arbeitsdateien)
+_imgpick/
+_m*.png
+_br.png
