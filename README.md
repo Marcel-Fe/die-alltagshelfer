@@ -12,8 +12,8 @@ Statische Premium-SaaS-Website (HTML/CSS/JS, ohne Build-Tools). Inspiriert von S
 
 | Datei | Beschreibung |
 |-------|--------------|
-| `index.html` | Landingpage: Hero, Lösungen (4 Module), Branchen, Preise, Vertrauen, Kontakt |
-| `dashboard.html` | Kundenbereich als Demo (Übersicht, Buchhaltung, Dokumente, KI-Assistent, Automatisierungen, Einstellungen) |
+| `index.html` | Landingpage: Hero, Apps-Showcase, Tools-Teaser, Branchen, Warum wir, Kontakt |
+| `dashboard.html` | Kundenbereich als Demo (Übersicht, Dokumente, KI-Assistent, Automatisierungen, Einstellungen) |
 | `css/style.css` | Design-System der Landingpage |
 | `css/dashboard.css` | Styles des Kundenbereichs |
 | `js/main.js` | Animationen, Scroll-Reveal, Demo-Formular |
@@ -25,12 +25,10 @@ Statische Premium-SaaS-Website (HTML/CSS/JS, ohne Build-Tools). Inspiriert von S
 
 Einfach `index.html` im Browser öffnen – keine Installation nötig.
 
-## Module
+## Apps
 
-1. **KI-Buchhaltungsassistent** – Buchungsanalyse, Fehlererkennung, Vorbereitung für den Steuerberater
-2. **Dokumentenautomatisierung** – automatische Erfassung, Zuordnung, Ablage und Fristen
-3. **KI-Unternehmensassistent** – Fragen beantworten, Daten analysieren, Zusammenfassungen
-4. **Prozessautomatisierung** – Workflows, Erinnerungen, automatische Abläufe
+Aktuell vorgestellt: **FamilienApp** und **DogMatch AI** (installierbare Web-Apps).
+Weitere Apps sowie Tools (Verwaltungsassistent, Pflegeassistent, Handwerker-Tool) sind in Entwicklung.
 
 ## Technik
 
@@ -38,10 +36,6 @@ Einfach `index.html` im Browser öffnen – keine Installation nötig.
 - SEO-Grundlagen (Meta-Tags, Open Graph, JSON-LD)
 - Schnelle Ladezeit, keine schweren Frameworks
 - Animationen respektieren `prefers-reduced-motion`
-
-## Hinweis
-
-Der KI-Buchhaltungsassistent unterstützt bei Verwaltung und Vorbereitung und ersetzt **keine Steuerberatung**.
 
 ---
 

@@ -56,9 +56,9 @@ const chatLog = document.getElementById("chatLog");
 
 const cannedReplies = [
   "Gern! Diese Woche wurden 248 Aufgaben automatisch erledigt und 12,5 Stunden eingespart. Die Details habe ich in der Übersicht hinterlegt.",
-  "Ich habe 3 offene Auffälligkeiten in der Buchhaltung gefunden. Die wichtigste: eine mögliche Doppelbuchung über 1.240 €.",
-  "Zusammenfassung erstellt: 42 Belege analysiert, 8 Dokumente zugeordnet, 1 Frist am 24.06. im Blick. Soll ich den Bericht als PDF vorbereiten?",
-  "In dieser Demo antworte ich mit Beispieldaten. In der echten Anwendung greife ich sicher auf Ihre Unternehmensdaten zu.",
+  "Aktuell sind 5 Aufgaben offen, davon 2 mit Frist. Soll ich Erinnerungen dafür einrichten?",
+  "Zusammenfassung erstellt: 8 Dokumente zugeordnet, 5 Erinnerungen versendet, 1 Frist am 24.06. im Blick. Soll ich den Bericht als PDF vorbereiten?",
+  "In dieser Demo antworte ich mit Beispieldaten. In der echten Anwendung greife ich sicher auf Ihre Daten zu.",
 ];
 let replyIndex = 0;
 
