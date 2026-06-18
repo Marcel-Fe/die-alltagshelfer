@@ -13,12 +13,9 @@ Statische Premium-SaaS-Website (HTML/CSS/JS, ohne Build-Tools). Inspiriert von S
 | Datei | Beschreibung |
 |-------|--------------|
 | `index.html` | Landingpage: Hero, Apps-Showcase, Tools-Teaser, Branchen, Warum wir, Kontakt |
-| `dashboard.html` | Kundenbereich als Demo (Übersicht, Dokumente, KI-Assistent, Automatisierungen, Einstellungen) |
 | `css/style.css` | Design-System der Landingpage |
-| `css/dashboard.css` | Styles des Kundenbereichs |
 | `js/main.js` | Animationen, Scroll-Reveal, Demo-Formular |
-| `js/dashboard.js` | Ansichtenwechsel, Kennzahlen, Demo-Chat |
-| `assets/logo.svg` | Logo (Figuren tragen gemeinsam eine digitale Plattform) |
+| `assets/logo.svg` | Logo (aufsteigende A-Form) |
 | `assets/app-icon.svg` | App-Icon / Profilbild-Variante |
 
 ## Lokal ansehen

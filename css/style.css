@@ -1385,6 +1385,19 @@ section { padding: 96px 0; }
 }
 .ps-nav i.active { background: var(--teal); }
 
+/* Hinweis-Pill (z. B. "folgt bald") */
+.soon-note {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--amber);
+  background: rgba(239,167,62,0.14);
+  border: 1px solid rgba(239,167,62,0.32);
+  padding: 8px 18px;
+  border-radius: 999px;
+}
+
 /* ---------- Apps-Showcase ---------- */
 .apps {
   background:
