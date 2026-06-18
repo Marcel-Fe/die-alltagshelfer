@@ -24,7 +24,6 @@
 
       <nav class="sb-nav" aria-label="Dashboard-Navigation">
         <button class="sb-link active" data-view="uebersicht"><span class="sb-ic">▦</span> Übersicht</button>
-        <button class="sb-link" data-view="buchhaltung"><span class="sb-ic">€</span> Buchhaltung</button>
         <button class="sb-link" data-view="dokumente"><span class="sb-ic">🗂</span> Dokumente</button>
         <button class="sb-link" data-view="assistent"><span class="sb-ic">✦</span> KI-Assistent</button>
         <button class="sb-link" data-view="automatisierungen"><span class="sb-ic">⚙</span> Automatisierungen</button>
@@ -70,9 +69,9 @@
             <div class="stat-trend up">↑ 32 heute automatisch</div>
           </div>
           <div class="stat-card">
-            <div class="stat-label">Erkannte Fehler</div>
-            <div class="stat-value warn" data-count="17" data-suffix="">0</div>
-            <div class="stat-trend">3 davon noch offen</div>
+            <div class="stat-label">Dokumente abgelegt</div>
+            <div class="stat-value" data-count="128" data-suffix="">0</div>
+            <div class="stat-trend up">↑ 14 diese Woche</div>
           </div>
           <div class="stat-card dark">
             <div class="stat-label">Aktive Automatisierungen</div>
@@ -109,39 +108,12 @@
               <span class="panel-meta">heute</span>
             </div>
             <ul class="activity">
-              <li><i class="a-dot teal"></i><div><strong>42 Belege analysiert</strong><small>Buchhaltungsassistent · vor 12 Min.</small></div></li>
+              <li><i class="a-dot teal"></i><div><strong>5 Erinnerungen versendet</strong><small>Prozessautomatisierung · vor 12 Min.</small></div></li>
               <li><i class="a-dot amber"></i><div><strong>8 Dokumente automatisch zugeordnet</strong><small>Dokumentenautomatisierung · vor 26 Min.</small></div></li>
-              <li><i class="a-dot coral"></i><div><strong>1 Auffälligkeit erkannt</strong><small>Doppelte Buchung Re-2024-118 · vor 1 Std.</small></div></li>
+              <li><i class="a-dot coral"></i><div><strong>3 Aufgaben automatisch erledigt</strong><small>Automatisierungen · vor 1 Std.</small></div></li>
               <li><i class="a-dot teal"></i><div><strong>Wochenzusammenfassung erstellt</strong><small>KI-Assistent · vor 2 Std.</small></div></li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <!-- ===== VIEW: BUCHHALTUNG ===== -->
-      <section class="view" id="view-buchhaltung">
-        <div class="view-intro">
-          <p>Ihr KI-Buchhaltungsassistent hat <strong>312 Buchungen</strong> analysiert. 3 Auffälligkeiten warten auf Ihre Prüfung.</p>
-          <button class="btn-sm">CSV importieren</button>
-        </div>
-        <div class="panel">
-          <div class="panel-head">
-            <h2>Auffälligkeiten</h2>
-            <span class="panel-meta">3 offen</span>
-          </div>
-          <table class="data-table">
-            <thead>
-              <tr><th>Beleg</th><th>Hinweis</th><th>Betrag</th><th>Status</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Re-2024-118</td><td>Mögliche Doppelbuchung</td><td>1.240,00 €</td><td><span class="tag tag-coral">Offen</span></td></tr>
-              <tr><td>Re-2024-097</td><td>Ungewöhnlich hoher Betrag</td><td>8.900,00 €</td><td><span class="tag tag-coral">Offen</span></td></tr>
-              <tr><td>Beleg fehlt</td><td>Buchung ohne Belegzuordnung</td><td>312,50 €</td><td><span class="tag tag-amber">Prüfen</span></td></tr>
-              <tr><td>Re-2024-101</td><td>Konto automatisch korrigiert</td><td>89,00 €</td><td><span class="tag tag-teal">Erledigt</span></td></tr>
-              <tr><td>Re-2024-095</td><td>Skonto-Hinweis erstellt</td><td>2.150,00 €</td><td><span class="tag tag-teal">Erledigt</span></td></tr>
-            </tbody>
-          </table>
-          <p class="panel-note">Hinweis: Unterstützung für Ihre Verwaltung – keine Steuerberatung. Export für den Steuerberater jederzeit möglich.</p>
         </div>
       </section>
 
@@ -198,7 +170,7 @@
         <div class="panel">
           <ul class="auto-list">
             <li>
-              <div><strong>Eingangsrechnungen erfassen &amp; zuordnen</strong><small>läuft täglich, 6:00 Uhr · zuletzt: 42 Belege</small></div>
+              <div><strong>Dokumente erfassen &amp; zuordnen</strong><small>läuft täglich, 6:00 Uhr · zuletzt: 42 Dokumente</small></div>
               <button class="switch on" role="switch" aria-checked="true" aria-label="Automatisierung umschalten"></button>
             </li>
             <li>

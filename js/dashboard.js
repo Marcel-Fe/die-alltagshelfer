@@ -7,7 +7,6 @@ const viewTitle = document.getElementById("viewTitle");
 
 const titles = {
   uebersicht: "Übersicht",
-  buchhaltung: "Buchhaltung",
   dokumente: "Dokumente",
   assistent: "KI-Assistent",
   automatisierungen: "Automatisierungen",
