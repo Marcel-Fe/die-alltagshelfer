@@ -1666,6 +1666,22 @@ section { padding: 96px 0; }
 .tool-shots img { width: 100%; border-radius: 14px; border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
 
 .tool-note { max-width: 820px; margin: 0 auto 28px; font-size: 13px; color: var(--ink-faint); line-height: 1.6; text-align: center; }
+
+.tool-downloads { max-width: 760px; margin: 0 auto 28px; text-align: center; }
+.tool-downloads h3 { font-size: 16px; font-weight: 600; color: var(--ink-soft); margin-bottom: 14px; }
+.tool-dl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.tool-dl {
+  display: flex; align-items: center; gap: 14px; text-align: left;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px 18px; transition: border-color .18s ease, transform .18s ease, background .18s ease;
+}
+.tool-dl:hover { border-color: var(--line-strong); background: var(--card-2); transform: translateY(-2px); }
+.tool-dl .dl-ic { font-size: 24px; flex-shrink: 0; }
+.tool-dl .dl-text { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.tool-dl .dl-text strong { font-size: 15px; font-weight: 600; }
+.tool-dl .dl-text span { font-size: 12.5px; color: var(--ink-faint); line-height: 1.4; }
+.tool-dl .dl-arrow { font-size: 18px; color: var(--ink-faint); flex-shrink: 0; }
+
 .tool-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
 /* ---------- Feedback ---------- */
@@ -1808,6 +1824,7 @@ section { padding: 96px 0; }
   /* Tool */
   .tool-benefits { grid-template-columns: 1fr; }
   .tool-shots { grid-template-columns: 1fr; }
+  .tool-dl-grid { grid-template-columns: 1fr; }
   .tool-impact { padding: 26px 22px; }
   .tool-lead { font-size: 16.5px; }
   .tool-flow span { font-size: 13px; padding: 8px 12px; }
