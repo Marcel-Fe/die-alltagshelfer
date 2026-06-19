@@ -33,3 +33,9 @@ _v_*.png
 _g*.png
 _gcap*.js
 _gsheet.*
+
+_s_*.png
+_shot2.js
+_poster.js
+_pick/
+_tool/

@@ -71,6 +71,46 @@ if (form) {
   });
 }
 
+// Feedback: Sternebewertung
+const starRating = document.getElementById("starRating");
+const ratingHint = document.getElementById("ratingHint");
+let selectedRating = 0;
+if (starRating) {
+  const stars = Array.from(starRating.querySelectorAll(".star"));
+  const hints = ["", "Schade – was fehlt?", "Geht besser", "Ganz gut", "Richtig gut!", "Spitze – danke!"];
+  const paint = (val) => stars.forEach((s, i) => s.classList.toggle("active", i < val));
+  stars.forEach((star) => {
+    const val = parseInt(star.dataset.value, 10);
+    star.addEventListener("mouseenter", () => paint(val));
+    star.addEventListener("focus", () => paint(val));
+    star.addEventListener("click", () => {
+      selectedRating = val;
+      stars.forEach((s, i) => s.setAttribute("aria-checked", i === val - 1 ? "true" : "false"));
+      paint(val);
+      if (ratingHint) ratingHint.textContent = hints[val];
+    });
+  });
+  starRating.addEventListener("mouseleave", () => paint(selectedRating));
+}
+
+// Feedback-Formular absenden (ohne Backend)
+const feedbackForm = document.getElementById("feedbackForm");
+if (feedbackForm) {
+  feedbackForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (selectedRating === 0) {
+      if (ratingHint) {
+        ratingHint.textContent = "Bitte zuerst Sterne vergeben";
+        ratingHint.style.color = "var(--coral)";
+      }
+      starRating.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+    feedbackForm.classList.add("sent");
+    document.getElementById("feedbackSuccess").classList.add("show");
+  });
+}
+
 // Video-Platzhalter: Hinweis bei Klick
 document.querySelectorAll(".video-frame").forEach((frame) => {
   const open = () => {
