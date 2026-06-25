@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 104" fill="none" role="img" aria-label="LIVENO">
+  <defs>
+    <linearGradient id="liveno-grad" x1="20" y1="74" x2="112" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#42D7A6"/>
+      <stop offset="0.42" stop-color="#3FB6C9"/>
+      <stop offset="0.68" stop-color="#5571E6"/>
+      <stop offset="1" stop-color="#7C4DE0"/>
+    </linearGradient>
+    <linearGradient id="liveno-head" x1="57" y1="15" x2="75" y2="33" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4FE0AE"/>
+      <stop offset="1" stop-color="#34C49A"/>
+    </linearGradient>
+  </defs>
+  <!-- Unendlichkeit = Körper/Arme, als durchgehendes Band -->
+  <path d="M66 58 C 55 42 33 42 30 58 C 27 74 50 74 66 58 C 82 42 104 42 102 58 C 99 74 77 74 66 58 Z"
+        stroke="url(#liveno-grad)" stroke-width="12.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Kopf = Person -->
+  <circle cx="66" cy="24" r="9.5" fill="url(#liveno-head)"/>
+</svg>
